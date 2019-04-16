@@ -1,27 +1,80 @@
-body, html{
-  height:100%;
+body, html {
+  height: 100%;
 }
-body{
+
+body {
   margin: 0px;
-  background-color:#444;
+  background-image: url(http://media-s3-us-east-1.ceros.com/hype-beast/images/2018/07/13/a9a51bc0b8d626db493ab5f9a971b043/background-hero.png);
+  background-position: center;
+  background-size: cover;
   font-size: 18px;
 }
-body, a:link, a:visited, a:active{
+
+body, a:link, a:visited, a:active {
   color: lightblue;
 }
-.title, .addDancerButton{
-  padding:5px 12px;
-  float:right;
+
+.title, .addDancerButton {
+  padding: 5px 12px;
+  float: right;
 }
-.topbar{
-  height:32px;
+
+.topbar {
+  height: 32px;
   background-color: #555;
 }
-.title{
+
+.title {
   background-color: #777;
 }
-.dancer{
-  border:10px solid red;
-  border-radius:10px;
-  position:absolute;
+
+.dancer {
+  border: 10px solid red;
+  border-radius: 10px;
+  position: absolute;
 }
+
+/*
+  ORIGINAL POKEMON IMPLEMENTATIONS AHEAD
+*/
+.pokeball {
+  width: 60px;
+  height: 60px;
+  background-image: -webkit-linear-gradient(top, #f00 50%, #fff 50%);
+  border-radius: 50%;
+  position: relative;
+  border: 5px solid #000;
+  margin: 0 auto;
+  box-shadow: -6px 1.8px 8px 0px rgba(0, 0, 0, 0.6);
+  animation: spin ease-in-out infinite 3s;
+}
+.pokeball .pokebar {
+  width: 100%;
+  height: 6px;
+  background-color: #000;
+  position: absolute;
+  top: 48%;
+  padding: 5px 0;
+}
+.pokeball .pokebutton {
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 50%;
+  position: absolute;
+  top: -3px;
+  left: 38%;
+}
+.pokeball .pokebutton .pokebtnMini {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  position: relative;
+  top: 2.5px;
+  margin: 0 auto;
+  box-shadow: -2px 0px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+/*# sourceMappingURL=styles.css.map */
